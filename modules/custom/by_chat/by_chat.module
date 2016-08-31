@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains by_chat.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function by_chat_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the by_chat module.
+    case 'help.page.by_chat':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('BY Chat') . '</p>';
+      return $output;
+
+    default:
+  }
+}

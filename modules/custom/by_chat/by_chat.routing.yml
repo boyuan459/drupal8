@@ -1,0 +1,8 @@
+
+by_chat.chat_controller_say:
+  path: '/by_chat/chat/say/{count}'
+  defaults:
+    _controller: '\Drupal\by_chat\Controller\ChatController::say'
+    _title: 'Say a sentence'
+  requirements:
+    _permission: 'access content'

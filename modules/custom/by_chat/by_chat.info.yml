@@ -1,0 +1,5 @@
+name: by_chat
+type: module
+description: BY Chat
+core: 8.x
+package: BYuan
