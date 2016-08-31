@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "911a6155e42e168dd49a24de1c8d8713",
-    "content-hash": "5dbcbaf252f15dfb29b520dc5873abda",
+    "hash": "02d4b283374fcf1669886bdf818ea363",
+    "content-hash": "b279ff15ced604be7977fdea7ac34e76",
     "packages": [
         {
             "name": "composer/installers",
@@ -612,6 +612,55 @@
             "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
             "homepage": "http://drupal.org/project/admin_toolbar",
             "time": "2016-08-19 14:05:31"
+        },
+        {
+            "name": "drupal/devel",
+            "version": "8.1.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "930b7b89c2fa2047ebbb0fb3ba53f45a67409242"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/devel_generate": "self.version",
+                "drupal/devel_node_access": "self.version",
+                "drupal/kint": "self.version",
+                "drupal/webprofiler": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/devel_generate, drupal/devel_node_access, drupal/kint, drupal/webprofiler",
+                "drupal/menu_ui": "Required by drupal/devel_node_access"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com",
+                    "homepage": "https://github.com/weitzman",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "http://drupal.org/project/devel",
+            "time": "2016-06-23 14:14:07"
         },
         {
             "name": "easyrdf/easyrdf",
