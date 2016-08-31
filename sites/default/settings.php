@@ -717,8 +717,8 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 
 $databases['default']['default'] = array (
   'database' => 'mja',
-  'username' => 'homestead',
-  'password' => 'secret',
+  'username' => 'root',
+  'password' => 'root',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
